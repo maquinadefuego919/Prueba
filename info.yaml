@@ -2,16 +2,16 @@
 project:
   title:        "test_1"      # Project title
   author:       "UABC"      # Your name
-  discord:      "ABNER"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "ABNER Y ALVARO"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "TBT"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     10000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x2"          # Valid values for analog projects: 1x2, 2x2
 
   # How many analog pins does your project use?
-  analog_pins: 2        # Valid values: 0 to 6
+  analog_pins: 3        # Valid values: 0 to 6
   uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
@@ -19,7 +19,7 @@ project:
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
-    - "tt_um_test_1.v"
+    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
