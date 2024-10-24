@@ -19,5 +19,32 @@ module tt_um_test_1 (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+    
+        assign uo_out[0] = VGND;
+  assign uo_out[1] = VGND;
+  assign uo_out[2] = VGND;
+  assign uo_out[3] = VGND;
+  assign uo_out[4] = VGND;
+  assign uo_out[5] = VGND;
+  assign uo_out[6] = VGND;
+  assign uo_out[7] = VGND;
 
+  assign uio_out[0] = VGND;
+  assign uio_out[1] = VGND;
+  assign uio_out[2] = VGND;
+  assign uio_out[3] = VGND;
+  assign uio_out[4] = VGND;
+  assign uio_out[5] = VGND;
+  assign uio_out[6] = VGND;
+  assign uio_out[7] = VGND;
+
+  assign uio_oe[0] = VGND;
+  assign uio_oe[1] = VGND;
+  assign uio_oe[2] = VGND;
+  assign uio_oe[3] = VGND;
+  assign uio_oe[4] = VGND;
+  assign uio_oe[5] = VGND;
+  assign uio_oe[6] = VGND;
+  assign uio_oe[7] = VGND;
+    
 endmodule
