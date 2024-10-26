@@ -1,0 +1,125 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO tt_um_test_1
+  CLASS BLOCK ;
+  FOREIGN tt_um_test_1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 161.000 BY 225.760 ;
+  PIN Out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.782000 ;
+    PORT
+      LAYER met3 ;
+        RECT 157.000 108.840 161.000 109.440 ;
+    END
+  END Out
+  PIN VGND
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 23.460 10.640 25.060 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 60.945 10.640 62.545 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 98.430 10.640 100.030 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 135.915 10.640 137.515 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 30.220 10.640 31.820 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 81.220 10.640 82.820 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 132.220 10.640 133.820 215.120 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 26.760 10.640 28.360 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 64.245 10.640 65.845 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 101.730 10.640 103.330 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 139.215 10.640 140.815 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 33.520 10.640 35.120 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 84.520 10.640 86.120 215.120 ;
+    END
+  END VPWR
+  PIN Vin
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 157.000 115.640 161.000 116.240 ;
+    END
+  END Vin
+  PIN Vip
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 157.000 112.240 161.000 112.840 ;
+    END
+  END Vip
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 143.830 224.760 144.130 225.760 ;
+    END
+  END clk
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 155.670 215.070 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 155.480 214.965 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 155.480 215.120 ;
+      LAYER met2 ;
+        RECT 23.490 10.695 154.010 215.065 ;
+      LAYER met3 ;
+        RECT 23.470 116.640 157.000 215.045 ;
+        RECT 23.470 115.240 156.600 116.640 ;
+        RECT 23.470 113.240 157.000 115.240 ;
+        RECT 23.470 111.840 156.600 113.240 ;
+        RECT 23.470 109.840 157.000 111.840 ;
+        RECT 23.470 108.440 156.600 109.840 ;
+        RECT 23.470 10.715 157.000 108.440 ;
+  END
+END tt_um_test_1
+END LIBRARY
+
