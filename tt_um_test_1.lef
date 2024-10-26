@@ -1,0 +1,103 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO tt_um_test_1
+  CLASS BLOCK ;
+  FOREIGN tt_um_test_1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 161.000 BY 225.760 ;
+  PIN Out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.782000 ;
+    PORT
+      LAYER met3 ;
+        RECT 157.000 112.240 161.000 112.840 ;
+    END
+  END Out
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 33.955 10.640 35.955 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 72.825 10.640 74.825 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 111.695 10.640 113.695 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 150.565 10.640 152.565 215.120 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 14.520 10.640 16.520 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 53.390 10.640 55.390 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 92.260 10.640 94.260 215.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 131.130 10.640 133.130 215.120 ;
+    END
+  END VPWR
+  PIN Vin
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 115.640 4.000 116.240 ;
+    END
+  END Vin
+  PIN Vip
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.126000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 112.240 4.000 112.840 ;
+    END
+  END Vip
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END clk
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 155.670 215.070 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 155.480 214.965 ;
+      LAYER met1 ;
+        RECT 4.210 10.640 155.480 215.120 ;
+      LAYER met2 ;
+        RECT 4.230 10.695 152.505 215.065 ;
+      LAYER met3 ;
+        RECT 3.990 116.640 157.000 215.045 ;
+        RECT 4.400 115.240 157.000 116.640 ;
+        RECT 3.990 113.240 157.000 115.240 ;
+        RECT 4.400 111.840 156.600 113.240 ;
+        RECT 3.990 10.715 157.000 111.840 ;
+  END
+END tt_um_test_1
+END LIBRARY
+
