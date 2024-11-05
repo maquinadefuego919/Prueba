@@ -1,0 +1,50 @@
+{
+    "DESIGN_NAME": "tt_um_test_1",
+     "VERILOG_FILES": "dir::src/*.v",
+     "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clk",
+
+    "CLOCK_PERIOD": 10.0,
+ 
+"BASE_SDC_FILE" :"dir::src/tt_um_test_1.sdc",
+"FP_SIZING": "absolute",
+  "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+  "PL_ESTIMATE_PARASITICS": 0,
+  "GRT_ALLOW_CONGESTION": 1,
+
+  "FP_IO_HLENGTH": 2,
+  "FP_IO_VLENGTH": 2,
+
+  "FP_PDN_VPITCH": 38.87,
+
+
+   "//": "PDN",
+  "VDD_NETS": ["VDPWR"],
+"GND_NETS": ["VGND"],
+ "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": 0,
+
+   "FP_PDN_MULTILAYER": 0,
+
+ "//": "MAGIC_DEF_LABELS may cause issues with LVS",
+  "MAGIC_DEF_LABELS": 0,
+
+  "//": "Only export pin area in LEF (without any connected nets)",
+  "MAGIC_WRITE_LEF_PINONLY": 1,
+
+    "pdk::sky130*": {
+        "RT_MAX_LAYER":"met4",
+        "DIE_AREA":"0.0 0.0 161.0 225.76",
+        "FP_DEF_TEMPLATE":"dir::src/tt_analog_1x2.def",
+        "FP_CORE_UTIL": 5,
+        "CLOCK_PERIOD": 10,
+        "scl::sky130_fd_sc_hs": {
+            "CLOCK_PERIOD": 8
+        },
+        "scl::sky130_fd_sc_ls": {
+            "MAX_FANOUT_CONSTRAINT": 5
+        }
+    }
+    
+    
+    
+}
