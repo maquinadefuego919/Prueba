@@ -1,0 +1,50 @@
+MACRO sky130_fd_sc_hd__decap_3
+  CLASS BLOCK ;
+  FOREIGN sky130_fd_sc_hd__decap_3 ;
+  ORIGIN 500.195 500.245 ;
+  SIZE 1001.770 BY 1003.210 ;
+  PIN VPWR
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.635 1.380 2.805 ;
+        RECT 0.085 1.545 1.295 2.635 ;
+        RECT 0.775 1.005 1.295 1.545 ;
+      LAYER mcon ;
+        RECT 0.145 2.635 0.315 2.805 ;
+        RECT 0.605 2.635 0.775 2.805 ;
+        RECT 1.065 2.635 1.235 2.805 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 1.380 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.085 0.835 0.605 1.375 ;
+        RECT 0.085 0.085 1.295 0.835 ;
+        RECT 0.000 -0.085 1.380 0.085 ;
+      LAYER mcon ;
+        RECT 0.145 -0.085 0.315 0.085 ;
+        RECT 0.605 -0.085 0.775 0.085 ;
+        RECT 1.065 -0.085 1.235 0.085 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 1.380 0.240 ;
+    END
+  END VGND
+  PIN VPB
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.305 1.570 2.910 ;
+    END
+  END VPB
+  PIN VNB
+    PORT
+      LAYER pwell ;
+        RECT 0.145 -0.085 0.315 0.085 ;
+    END
+  END VNB
+END sky130_fd_sc_hd__decap_3
+END LIBRARY
+
