@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_brandonramos_opamp_ladder
+MACRO tt_um_DIGI_OTA_8
   CLASS BLOCK ;
-  FOREIGN tt_um_brandonramos_opamp_ladder ;
+  FOREIGN tt_um_DIGI_OTA_8 ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   OBS
@@ -11013,6 +11013,6 @@ MACRO tt_um_brandonramos_opamp_ladder
         RECT 137.490 -0.030 138.390 50.330 ;
         RECT 156.810 -0.030 157.710 161.440 ;
   END
-END tt_um_brandonramos_opamp_ladder
+END tt_um_DIGI_OTA_8
 END LIBRARY
 
