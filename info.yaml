@@ -15,7 +15,7 @@ project:
   uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_DIGI_OTA_8"
+  top_module:  "tt_um_test_4"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
@@ -54,9 +54,9 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "Out"
-  ua[1]: "Vin"
-  ua[2]: "Vip"
+  ua[0]: "Vo"
+  ua[1]: "VA"
+  ua[2]: "VB"
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
